@@ -30,18 +30,20 @@ TechInnovate is a 3-tier web application built with **Express.js**, **Node.js**,
    npm install
 
 3. Set up the .env file: Create a .env file in the root directory and configure the following variables:
-
+```
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=yourpassword
 DB_NAME=appdb
 PORT=8080
+```
 
 4. Set up the MySQL database:
 
 Create a database named appdb.
 Create a users table:
 
+```
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(255) NOT NULL,
@@ -49,7 +51,7 @@ CREATE TABLE users (
   idea TEXT NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
+```
 
 ## Usage
 1. Start the server:
